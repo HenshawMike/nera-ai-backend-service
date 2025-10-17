@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: nera-chat-service
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: OPENROUTER_MODEL
+        value: deepseek/deepseek-chat-v3.1:free
+      - key: PYTHON_VERSION
+        value: 3.10.0
