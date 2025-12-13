@@ -59,7 +59,7 @@ class ChatService:
             logger.warning("OPENROUTER_API_KEY environment variable is not set")
         self.api_url = "https://openrouter.ai/api/v1/chat/completions"
         self.client = httpx.AsyncClient()
-        self.model = os.getenv("OPENROUTER_MODEL", "deepseek/deepseek-chat-v3.1:free")  # Default model if not specified
+        self.model = os.getenv("OPENROUTER_MODEL", "openai/gpt-oss-120b:free")  # Default model if not specified
 
     async def generate_response(self, messages: List[Message]) -> str:
         try:
