@@ -10,6 +10,6 @@ services:
       - key: OPENROUTER_API_KEY
         sync: false
       - key: OPENROUTER_MODEL
-        value: deepseek/deepseek-chat-v3.1:free
+        value: openai/gpt-oss-120b:free
       - key: PYTHON_VERSION
         value: 3.10.0
