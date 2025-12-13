@@ -89,7 +89,7 @@ Check if the service is running.
 
 | Variable | Description | Required | Default |
 |----------|-------------|----------|---------|
-| `DEEPSEEK_API_KEY` | API key for DeepSeek | Yes | - |
+| `OPENAI_API_KEY` | API key for Openai | Yes | - |
 | `PORT` | Port to run the service on | No | 8001 |
 | `HOST` | Host to bind to | No | 0.0.0.0 |
 | `LOG_LEVEL` | Logging level | No | info |
@@ -117,6 +117,7 @@ docker run -p 8001:8001 --env-file .env nera-chat-service
 ```
 
 ## License
+
 
 [Your License Here]# nera-ai-backend-service
 # nera-ai-backend-service
